@@ -9,11 +9,8 @@ with gr.Blocks() as demo:
         with gr.Column():
             english = gr.Text(label="Generated Text")
             translation = gr.Text(label="Translated Text")
-    btn = gr.Button("Generate")
-    btn_translate = gr.Button("Translate")
-    btn.click(text_service.generate, inputs=[seed], outputs=[english])
-    btn_translate.click(
-        translate_service.translate, inputs=[english], outputs=[translation]
-    )
+
+    seed.change(text_service.generate, inputs=[seed], outputs=[english])
+    english.change(translate_service.translate, inputs=[english], outputs=[translation])
 
     gr.Examples(["My name is Clara and I am"], inputs=[seed])
