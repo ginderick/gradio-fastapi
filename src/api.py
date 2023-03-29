@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 
-from src.chat import chat_endpoints
+from src.chat import text_endpoints
 
 api_router = APIRouter()
 
-api_router.include_router(chat_endpoints.router)
+api_router.include_router(text_endpoints.router)
