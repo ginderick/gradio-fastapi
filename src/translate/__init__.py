@@ -1,0 +1,1 @@
+from src.translate.translate_service import translate_service
