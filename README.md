@@ -1,6 +1,6 @@
 # Gradio Text
 
-Text generation and translation using Gradio and FastAPI
+Text generation and translation from English to German using Gradio and FastAPI
 
 
 ## Installing
