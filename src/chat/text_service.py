@@ -3,7 +3,7 @@ from transformers import pipeline
 generator = pipeline("text-generation", model="gpt2")
 
 
-class ChatService:
+class TextService:
     def __init__(self) -> None:
         pass
 
@@ -12,4 +12,4 @@ class ChatService:
         return result[0]["generated_text"]
 
 
-text_service = ChatService()
+text_service = TextService()
