@@ -1,1 +1,1 @@
-from src.chat.text_service import text_service
+from src.text.text_service import text_service

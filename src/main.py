@@ -2,7 +2,7 @@ import gradio as gr
 from fastapi import FastAPI
 
 from src.api import api_router
-from src.chat.text_gradio_views import text_demo
+from src.text.text_gradio_views import text_demo
 from src.constants.path_constants import PathConstants
 
 app = FastAPI(title="Gradio Demo with FastAPI")

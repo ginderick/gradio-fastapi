@@ -1,6 +1,6 @@
 import gradio as gr
 
-from src.chat import text_service
+from src.text import text_service
 
 examples = [
     ["The Moon's orbit around Earth has"],

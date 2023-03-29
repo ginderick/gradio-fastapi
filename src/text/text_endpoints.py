@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 
-from src.chat import text_service
-from src.chat.text_pydantic_models import Item
+from src.text import text_service
+from src.text.text_pydantic_models import Item
 
 router = APIRouter()
 
