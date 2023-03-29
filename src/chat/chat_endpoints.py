@@ -1,12 +1,12 @@
 from fastapi import APIRouter
 
-from src.chat import chat_service
+from src.chat import text_service
 
 router = APIRouter()
 
 
 @router.get("/greet")
-async def greet():
+async def generate():
 
-    result = chat_service.greet("Gin")
+    result = text_service.generate("Gin")
     return result
