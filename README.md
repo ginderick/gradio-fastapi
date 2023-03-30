@@ -12,7 +12,7 @@ There are 2 ways to get a development env running:
 ```
 $ git clone https://github.com/ginderick/gradio-text.git
 $ pip3 install -r requirements.txt
-$ uvicorn src.main:app -p 8000:80000 --reload
+$ uvicorn src.main:app -p 8000:8000 --reload
 ```
 
 ### Method 2: Docker
